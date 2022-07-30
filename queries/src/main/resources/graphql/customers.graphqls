@@ -1,0 +1,14 @@
+extend type Query {
+    customerById(id: ID): Customer
+    customers: [Customer]
+}
+
+type Customer {
+    id: ID
+    name: String
+    account: Account
+}
+
+type Account {
+    id: ID
+}
